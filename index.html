@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrot Tattoo — Melbourne Premier Tattoo Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-black: #0a0403;
+    --bg-glow: #3a0f0c;
+    --nav-bg: #150807;
+    --orange: #f3661a;
+    --green: #34d058;
+    --white: #ffffff;
+    --gray-text: #c7bcb7;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: radial-gradient(ellipse at 50% 35%, var(--bg-glow) 0%, var(--bg-black) 55%, #000000 100%);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .logo-icon { font-size: 1.6rem; }
+  .logo-text .accent { color: var(--orange); }
+
+  .nav-links { display: flex; gap: 40px; }
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: color 0.15s ease;
+  }
+  .nav-links a:hover { color: var(--orange); }
+
+  .btn-book-now {
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: filter 0.15s ease;
+  }
+  .btn-book-now:hover { filter: brightness(1.1); }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 140px 24px 120px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(52, 208, 88, 0.35);
+    color: var(--green);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 24px;
+    border-radius: 999px;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+  }
+  h1 .accent { color: var(--orange); }
+
+  .subtext {
+    color: var(--gray-text);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 560px;
+    margin-bottom: 40px;
+  }
+
+  .cta-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+  .btn-primary,
+  .btn-secondary {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--white);
+    transition: background 0.15s ease;
+  }
+  .btn-primary { background: #5c2018; }
+  .btn-primary:hover { background: #6e271d; }
+  .btn-secondary { background: #1c110e; }
+  .btn-secondary:hover { background: #271a16; }
+
+  @media (max-width: 768px) {
+    .navbar { padding: 16px 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 20px 80px; }
+    h1 { font-size: clamp(2.4rem, 12vw, 4rem); }
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <span class="logo-icon">🥕</span>
+    <span class="logo-text">CARROT <span class="accent">TATTOO</span></span>
+  </div>
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+  </nav>
+  <a href="#book" class="btn-book-now">Book Now</a>
+</header>
+
+<main class="hero">
+  <div class="badge">Melbourne Premier Tattoo Studio <span>🖋️</span></div>
+  <h1>ROOTED IN <span class="accent">INK</span></h1>
+  <p class="subtext">Melbourne's freshest custom tattoo experience. Ditch the link-in-bio, get authentic skin artistry built to turn heads.</p>
+  <div class="cta-group">
+    <a href="#book" class="btn-primary">Book Consultation</a>
+    <a href="#work" class="btn-secondary">View Work</a>
+  </div>
+</main>
+
+</body>
+</html>
